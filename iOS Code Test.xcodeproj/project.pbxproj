@@ -16,6 +16,9 @@
 		DFA765171C65E10B007A5BC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFA765151C65E10B007A5BC4 /* LaunchScreen.storyboard */; };
 		DFA765221C65E10B007A5BC4 /* iOS_Code_TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA765211C65E10B007A5BC4 /* iOS_Code_TestTests.m */; };
 		DFA7652D1C65E10B007A5BC4 /* iOS_Code_TestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA7652C1C65E10B007A5BC4 /* iOS_Code_TestUITests.m */; };
+		DFA7653E1C65E158007A5BC4 /* categoriesStatic.json in Resources */ = {isa = PBXBuildFile; fileRef = DFA7653B1C65E158007A5BC4 /* categoriesStatic.json */; };
+		DFA7653F1C65E158007A5BC4 /* foodStatic.json in Resources */ = {isa = PBXBuildFile; fileRef = DFA7653C1C65E158007A5BC4 /* foodStatic.json */; };
+		DFA765401C65E158007A5BC4 /* exercisesStatic.json in Resources */ = {isa = PBXBuildFile; fileRef = DFA7653D1C65E158007A5BC4 /* exercisesStatic.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		DFA765281C65E10B007A5BC4 /* iOS Code TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Code TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFA7652C1C65E10B007A5BC4 /* iOS_Code_TestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_Code_TestUITests.m; sourceTree = "<group>"; };
 		DFA7652E1C65E10B007A5BC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFA7653B1C65E158007A5BC4 /* categoriesStatic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = categoriesStatic.json; path = "../../../Downloads/json files/categoriesStatic.json"; sourceTree = "<group>"; };
+		DFA7653C1C65E158007A5BC4 /* foodStatic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = foodStatic.json; path = "../../../Downloads/json files/foodStatic.json"; sourceTree = "<group>"; };
+		DFA7653D1C65E158007A5BC4 /* exercisesStatic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = exercisesStatic.json; path = "../../../Downloads/json files/exercisesStatic.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,11 @@
 		DFA765031C65E10B007A5BC4 /* iOS Code Test */ = {
 			isa = PBXGroup;
 			children = (
+				DFA765411C65E3BC007A5BC4 /* Main View */,
+				DFA765421C65E3C6007A5BC4 /* Exercise View */,
+				DFA765441C65E3E5007A5BC4 /* Detailed Food View */,
+				DFA765431C65E3CF007A5BC4 /* Overview Food View */,
+				DFA7653A1C65E130007A5BC4 /* Resources */,
 				DFA765071C65E10B007A5BC4 /* AppDelegate.h */,
 				DFA765081C65E10B007A5BC4 /* AppDelegate.m */,
 				DFA7650A1C65E10B007A5BC4 /* ViewController.h */,
@@ -141,6 +152,44 @@
 				DFA7652E1C65E10B007A5BC4 /* Info.plist */,
 			);
 			path = "iOS Code TestUITests";
+			sourceTree = "<group>";
+		};
+		DFA7653A1C65E130007A5BC4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DFA7653B1C65E158007A5BC4 /* categoriesStatic.json */,
+				DFA7653C1C65E158007A5BC4 /* foodStatic.json */,
+				DFA7653D1C65E158007A5BC4 /* exercisesStatic.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		DFA765411C65E3BC007A5BC4 /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Main View";
+			sourceTree = "<group>";
+		};
+		DFA765421C65E3C6007A5BC4 /* Exercise View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Exercise View";
+			sourceTree = "<group>";
+		};
+		DFA765431C65E3CF007A5BC4 /* Overview Food View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Overview Food View";
+			sourceTree = "<group>";
+		};
+		DFA765441C65E3E5007A5BC4 /* Detailed Food View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Detailed Food View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,7 +297,10 @@
 			files = (
 				DFA765171C65E10B007A5BC4 /* LaunchScreen.storyboard in Resources */,
 				DFA765141C65E10B007A5BC4 /* Assets.xcassets in Resources */,
+				DFA7653F1C65E158007A5BC4 /* foodStatic.json in Resources */,
 				DFA7650F1C65E10B007A5BC4 /* Main.storyboard in Resources */,
+				DFA7653E1C65E158007A5BC4 /* categoriesStatic.json in Resources */,
+				DFA765401C65E158007A5BC4 /* exercisesStatic.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
