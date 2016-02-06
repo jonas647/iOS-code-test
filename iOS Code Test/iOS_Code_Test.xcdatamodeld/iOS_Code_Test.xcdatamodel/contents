@@ -1,4 +1,76 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="14F1605" minimumToolsVersion="Automatic">
+    <entity name="Exercise" syncable="YES">
+        <attribute name="addedByUser" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="calories" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="custom" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="deleted" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="downloaded" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hidden" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="lastUpdated" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="nameDa" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameDe" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameEs" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameFr" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameIt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameNl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameNo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="namePl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="namePt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameRu" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameSv" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="oID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="photoVersion" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="FoodCategory" syncable="YES">
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="headCategory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastUpdated" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="nameDa" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameDe" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameEs" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameFi" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameFr" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameIt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameNl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameNo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="namePl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="namePt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameRu" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameSv" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="oID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="photoVersion" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="servingsCategory" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="foodDetail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FoodStatistics" inverseName="foodFamily" inverseEntity="FoodStatistics" syncable="YES"/>
+    </entity>
+    <entity name="FoodStatistics" syncable="YES">
+        <attribute name="addedByUser" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="calories" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="categoryID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="cholesterol" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="custom" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="deleted" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="downloaded" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="fat" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="fiber" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="gramsPerServing" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="hidden" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="language" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastUpdated" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="mlInGram" optional="YES" attributeType="Integer 16" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="oID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="pcsInGram" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="pcsText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="showMeasurement" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="sodium" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="sourceId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="sugar" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <relationship name="foodFamily" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FoodCategory" inverseName="foodDetail" inverseEntity="FoodCategory" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="FoodCategory" positionX="-72" positionY="-144" width="128" height="328"/>
+        <element name="FoodStatistics" positionX="234" positionY="-189" width="128" height="375"/>
+        <element name="Exercise" positionX="-72" positionY="207" width="128" height="360"/>
+    </elements>
 </model>
