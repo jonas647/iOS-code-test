@@ -37,8 +37,6 @@
     [fetchRequest setSortDescriptors:sortDescriptors];
     
     //Initialize Fetched Results Controller that will get the data from data model
-    //TODO - split up by sections
-    
     self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:section cacheName:nil];
 
     //Set view controller as the delegate to handle the response from fetched results controller

@@ -52,6 +52,13 @@
     
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    //Remove the selection of the previously selected table cell. Make the deselection here to show the user the previously selected cell with a short "flash".
+    [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -115,14 +122,11 @@
         NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
         NSManagedObject *sendingObject = [self.fetchedResultsController objectAtIndexPath:indexPath];
         
-        NSLog(@"Sending object: %@", sendingObject);
-        
         //Convert the selected object to a NSDictionary
         NSArray *keys = [[[sendingObject entity] attributesByName] allKeys];
         NSDictionary *dict = [sendingObject dictionaryWithValuesForKeys:keys];
         
-        NSLog(@"Dict: %@", dict);
-        
+        //Pass the dictionary to the destination VC
         [destinationVc setFoodStatistics:dict];
         
     }

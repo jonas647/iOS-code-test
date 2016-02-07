@@ -140,10 +140,7 @@
                 //If the key doesn't exist on the property then throw error message
                 if ([[newObject.entity propertiesByName]objectForKey:key] != nil) {
                    
-                    if (object != nil) {
-                        
-                        [newObject setValue:NULL_TO_NIL(object) forKey:key];
-                    }
+                    [newObject setValue:NULL_TO_NIL(object) forKey:key];
                     
                 } else {
                     NSLog(@"%@ doesn't exist. Make sure that all the keys in the json file is reflected in the data model.", key);

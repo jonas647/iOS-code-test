@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9B-bl-6lH">
-                                <rect key="frame" x="225" y="225" width="150" height="150"/>
+                                <rect key="frame" x="225" y="224" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="u9B-bl-6lH" secondAttribute="height" multiplier="1:1" id="ub1-BS-52N"/>
                                 </constraints>
@@ -31,7 +31,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9I6-j0-gTM">
-                                <rect key="frame" x="225" y="420.5" width="150" height="150"/>
+                                <rect key="frame" x="225" y="420" width="150" height="150"/>
                                 <state key="normal" title="Food" image="food.jpg"/>
                                 <connections>
                                     <segue destination="Dqp-CJ-c7x" kind="show" id="DLJ-jU-Qmo"/>
@@ -50,13 +50,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercise" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yq0-63-Ox8">
-                                <rect key="frame" x="271" y="199.5" width="58.5" height="17"/>
+                                <rect key="frame" x="271" y="199" width="58.5" height="17"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NK3-zH-1ji">
-                                <rect key="frame" x="283.5" y="396" width="34.5" height="17"/>
+                                <rect key="frame" x="283" y="395" width="34.5" height="17"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -109,7 +109,7 @@
         <!--Food Category View Controller-->
         <scene sceneID="kCw-c1-tVc">
             <objects>
-                <viewController id="Dqp-CJ-c7x" customClass="FoodCategoryViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Dqp-CJ-c7x" customClass="FoodCategoryViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="e2g-EZ-GK2"/>
                         <viewControllerLayoutGuide type="bottom" id="DyO-Vp-53y"/>
@@ -123,7 +123,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="foodCategoryTableViewCell" rowHeight="55" id="eBU-f0-9Y2" customClass="FoodCategoryTableViewCell">
-                                        <rect key="frame" x="0.0" y="92" width="560" height="55"/>
+                                        <rect key="frame" x="0.0" y="28" width="560" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eBU-f0-9Y2" id="1lQ-Dr-ndh">
                                             <rect key="frame" x="0.0" y="0.0" width="560" height="55"/>
@@ -178,12 +178,14 @@
                             <constraint firstItem="JCn-2I-TY6" firstAttribute="top" secondItem="4Lw-eF-onf" secondAttribute="topMargin" id="BYp-Xd-mYB"/>
                             <constraint firstItem="DyO-Vp-53y" firstAttribute="top" secondItem="JCn-2I-TY6" secondAttribute="bottom" id="Ghi-Vz-C7d"/>
                             <constraint firstItem="JCn-2I-TY6" firstAttribute="leading" secondItem="4Lw-eF-onf" secondAttribute="leadingMargin" id="RGF-dp-zbi"/>
+                            <constraint firstItem="JCn-2I-TY6" firstAttribute="top" secondItem="e2g-EZ-GK2" secondAttribute="bottom" id="fji-u3-siO"/>
                             <constraint firstItem="DyO-Vp-53y" firstAttribute="top" secondItem="JCn-2I-TY6" secondAttribute="bottom" id="hG0-ZY-OXG"/>
                             <constraint firstItem="JCn-2I-TY6" firstAttribute="top" secondItem="e2g-EZ-GK2" secondAttribute="bottom" id="v4M-s6-4r0"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="BYp-Xd-mYB"/>
+                                <exclude reference="v4M-s6-4r0"/>
                                 <exclude reference="Ghi-Vz-C7d"/>
                             </mask>
                         </variation>
@@ -199,7 +201,7 @@
         <!--Food View Controller-->
         <scene sceneID="80S-5B-3RT">
             <objects>
-                <viewController id="l9X-eS-0m3" customClass="FoodViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="l9X-eS-0m3" customClass="FoodViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dmN-es-TJC"/>
                         <viewControllerLayoutGuide type="bottom" id="QgI-yJ-zeN"/>
@@ -213,7 +215,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="foodTableViewCell" rowHeight="55" id="kfx-wu-oFe" customClass="FoodTableViewCell">
-                                        <rect key="frame" x="0.0" y="92" width="560" height="55"/>
+                                        <rect key="frame" x="0.0" y="28" width="560" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kfx-wu-oFe" id="BmN-9y-X93">
                                             <rect key="frame" x="0.0" y="0.0" width="560" height="55"/>
@@ -281,7 +283,7 @@
         <!--Food Statistics View Controller-->
         <scene sceneID="Zm3-gR-Qur">
             <objects>
-                <viewController storyboardIdentifier="detailedFoodViewController" id="u3l-V9-hcl" customClass="FoodStatisticsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detailedFoodViewController" automaticallyAdjustsScrollViewInsets="NO" id="u3l-V9-hcl" customClass="FoodStatisticsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rCA-eW-1bX"/>
                         <viewControllerLayoutGuide type="bottom" id="GgV-zw-JOX"/>
@@ -295,7 +297,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="foodStatisticsTableViewCell" rowHeight="55" id="gT9-km-lxu" customClass="FoodStatisticsTableViewCell">
-                                        <rect key="frame" x="0.0" y="92" width="560" height="55"/>
+                                        <rect key="frame" x="0.0" y="28" width="560" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gT9-km-lxu" id="9BU-Jr-FWB">
                                             <rect key="frame" x="0.0" y="0.0" width="560" height="55"/>
@@ -425,7 +427,13 @@
                             <constraint firstAttribute="trailingMargin" secondItem="eK9-fL-j9l" secondAttribute="trailing" id="FV4-52-tk2"/>
                             <constraint firstItem="6Fl-Sn-otr" firstAttribute="top" secondItem="eK9-fL-j9l" secondAttribute="bottom" id="J8I-Nx-eoz"/>
                             <constraint firstItem="eK9-fL-j9l" firstAttribute="leading" secondItem="678-HW-XXF" secondAttribute="leadingMargin" id="Skq-13-y8U"/>
+                            <constraint firstItem="eK9-fL-j9l" firstAttribute="top" secondItem="Yce-Hi-MDr" secondAttribute="bottom" constant="-64" id="V9G-73-aqJ"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Eqi-Jr-cvi"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="eK9-fL-j9l" id="I76-tX-Swk"/>

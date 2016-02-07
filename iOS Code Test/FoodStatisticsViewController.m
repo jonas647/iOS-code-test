@@ -61,13 +61,15 @@
     //Update the table view cell
     [cell.title setText:[keys objectAtIndex:indexPath.row]];
     
-    //If the value isn't a string then change to string value
-    if (![[values objectAtIndex:indexPath.row] isKindOfClass:[NSString class]]) {
+    //If it's a null value and change to blank value for that
+    //If it's not a string then get the string value 
+    if ([values objectAtIndex:indexPath.row] == [NSNull null]) {
+        [cell.volume setText:@""];
+    } else if (![[values objectAtIndex:indexPath.row] isKindOfClass:[NSString class]]) {
         [cell.volume setText:[[values objectAtIndex:indexPath.row]stringValue]];
     } else {
         [cell.volume setText:[values objectAtIndex:indexPath.row]];
     }
-    
     
     return cell;
 }
