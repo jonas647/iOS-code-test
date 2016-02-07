@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DFA386E01C66628E00A9686E /* FoodCategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA386DF1C66628E00A9686E /* FoodCategoryTableViewCell.m */; };
+		DFA386E31C66629D00A9686E /* FoodTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA386E21C66629D00A9686E /* FoodTableViewCell.m */; };
+		DFA386E61C6662AA00A9686E /* FoodStatisticsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA386E51C6662AA00A9686E /* FoodStatisticsTableViewCell.m */; };
+		DFA413711C66476E00B937EF /* FoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA413701C66476E00B937EF /* FoodViewController.m */; };
+		DFA413771C66517D00B937EF /* Exercise.png in Resources */ = {isa = PBXBuildFile; fileRef = DFA413751C66517D00B937EF /* Exercise.png */; };
+		DFA413781C66517D00B937EF /* food.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFA413761C66517D00B937EF /* food.jpg */; };
 		DFA765061C65E10B007A5BC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA765051C65E10B007A5BC4 /* main.m */; };
 		DFA765091C65E10B007A5BC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA765081C65E10B007A5BC4 /* AppDelegate.m */; };
-		DFA7650C1C65E10B007A5BC4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA7650B1C65E10B007A5BC4 /* ViewController.m */; };
 		DFA7650F1C65E10B007A5BC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFA7650D1C65E10B007A5BC4 /* Main.storyboard */; };
 		DFA765121C65E10B007A5BC4 /* iOS_Code_Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DFA765101C65E10B007A5BC4 /* iOS_Code_Test.xcdatamodeld */; };
 		DFA765141C65E10B007A5BC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFA765131C65E10B007A5BC4 /* Assets.xcassets */; };
@@ -19,9 +24,12 @@
 		DFA7653E1C65E158007A5BC4 /* categoriesStatic.json in Resources */ = {isa = PBXBuildFile; fileRef = DFA7653B1C65E158007A5BC4 /* categoriesStatic.json */; };
 		DFA7653F1C65E158007A5BC4 /* foodStatic.json in Resources */ = {isa = PBXBuildFile; fileRef = DFA7653C1C65E158007A5BC4 /* foodStatic.json */; };
 		DFA765401C65E158007A5BC4 /* exercisesStatic.json in Resources */ = {isa = PBXBuildFile; fileRef = DFA7653D1C65E158007A5BC4 /* exercisesStatic.json */; };
-		DFA765471C65EE54007A5BC4 /* foodCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA765461C65EE54007A5BC4 /* foodCategory.m */; };
-		DFA7654A1C65EE62007A5BC4 /* foodStatistics.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA765491C65EE62007A5BC4 /* foodStatistics.m */; };
-		DFA7654D1C65EE78007A5BC4 /* exerciseCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA7654C1C65EE78007A5BC4 /* exerciseCategory.m */; };
+		DFA765501C65F017007A5BC4 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA7654F1C65F017007A5BC4 /* MainViewController.m */; };
+		DFA765531C660760007A5BC4 /* ExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA765521C660760007A5BC4 /* ExerciseViewController.m */; };
+		DFA765561C6608F7007A5BC4 /* ExerciseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA765551C6608F7007A5BC4 /* ExerciseTableViewCell.m */; };
+		DFA765591C66188F007A5BC4 /* FoodCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA765581C66188F007A5BC4 /* FoodCategoryViewController.m */; };
+		DFA7655D1C6618CE007A5BC4 /* AbstractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA7655C1C6618CE007A5BC4 /* AbstractViewController.m */; };
+		DFA765631C661BEF007A5BC4 /* FoodStatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA765621C661BEF007A5BC4 /* FoodStatisticsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,12 +50,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DFA386DE1C66628E00A9686E /* FoodCategoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodCategoryTableViewCell.h; sourceTree = "<group>"; };
+		DFA386DF1C66628E00A9686E /* FoodCategoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodCategoryTableViewCell.m; sourceTree = "<group>"; };
+		DFA386E11C66629D00A9686E /* FoodTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodTableViewCell.h; sourceTree = "<group>"; };
+		DFA386E21C66629D00A9686E /* FoodTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodTableViewCell.m; sourceTree = "<group>"; };
+		DFA386E41C6662AA00A9686E /* FoodStatisticsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodStatisticsTableViewCell.h; sourceTree = "<group>"; };
+		DFA386E51C6662AA00A9686E /* FoodStatisticsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodStatisticsTableViewCell.m; sourceTree = "<group>"; };
+		DFA4136F1C66476E00B937EF /* FoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodViewController.h; sourceTree = "<group>"; };
+		DFA413701C66476E00B937EF /* FoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodViewController.m; sourceTree = "<group>"; };
+		DFA413751C66517D00B937EF /* Exercise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Exercise.png; path = ../../../Desktop/Exercise.png; sourceTree = "<group>"; };
+		DFA413761C66517D00B937EF /* food.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = food.jpg; path = ../../../Desktop/food.jpg; sourceTree = "<group>"; };
 		DFA765011C65E10B007A5BC4 /* iOS Code Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Code Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFA765051C65E10B007A5BC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DFA765071C65E10B007A5BC4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DFA765081C65E10B007A5BC4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DFA7650A1C65E10B007A5BC4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DFA7650B1C65E10B007A5BC4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DFA7650E1C65E10B007A5BC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DFA765111C65E10B007A5BC4 /* iOS_Code_Test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOS_Code_Test.xcdatamodel; sourceTree = "<group>"; };
 		DFA765131C65E10B007A5BC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,12 +78,18 @@
 		DFA7653B1C65E158007A5BC4 /* categoriesStatic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = categoriesStatic.json; path = "../../../Downloads/json files/categoriesStatic.json"; sourceTree = "<group>"; };
 		DFA7653C1C65E158007A5BC4 /* foodStatic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = foodStatic.json; path = "../../../Downloads/json files/foodStatic.json"; sourceTree = "<group>"; };
 		DFA7653D1C65E158007A5BC4 /* exercisesStatic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = exercisesStatic.json; path = "../../../Downloads/json files/exercisesStatic.json"; sourceTree = "<group>"; };
-		DFA765451C65EE54007A5BC4 /* foodCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = foodCategory.h; sourceTree = "<group>"; };
-		DFA765461C65EE54007A5BC4 /* foodCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = foodCategory.m; sourceTree = "<group>"; };
-		DFA765481C65EE62007A5BC4 /* foodStatistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = foodStatistics.h; sourceTree = "<group>"; };
-		DFA765491C65EE62007A5BC4 /* foodStatistics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = foodStatistics.m; sourceTree = "<group>"; };
-		DFA7654B1C65EE78007A5BC4 /* exerciseCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exerciseCategory.h; sourceTree = "<group>"; };
-		DFA7654C1C65EE78007A5BC4 /* exerciseCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = exerciseCategory.m; sourceTree = "<group>"; };
+		DFA7654E1C65F017007A5BC4 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		DFA7654F1C65F017007A5BC4 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		DFA765511C660760007A5BC4 /* ExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseViewController.h; sourceTree = "<group>"; };
+		DFA765521C660760007A5BC4 /* ExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseViewController.m; sourceTree = "<group>"; };
+		DFA765541C6608F7007A5BC4 /* ExerciseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseTableViewCell.h; sourceTree = "<group>"; };
+		DFA765551C6608F7007A5BC4 /* ExerciseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseTableViewCell.m; sourceTree = "<group>"; };
+		DFA765571C66188F007A5BC4 /* FoodCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodCategoryViewController.h; sourceTree = "<group>"; };
+		DFA765581C66188F007A5BC4 /* FoodCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodCategoryViewController.m; sourceTree = "<group>"; };
+		DFA7655B1C6618CE007A5BC4 /* AbstractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractViewController.h; sourceTree = "<group>"; };
+		DFA7655C1C6618CE007A5BC4 /* AbstractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractViewController.m; sourceTree = "<group>"; };
+		DFA765611C661BEF007A5BC4 /* FoodStatisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodStatisticsViewController.h; sourceTree = "<group>"; };
+		DFA765621C661BEF007A5BC4 /* FoodStatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodStatisticsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +117,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DFA4136E1C66476000B937EF /* Food View */ = {
+			isa = PBXGroup;
+			children = (
+				DFA4136F1C66476E00B937EF /* FoodViewController.h */,
+				DFA413701C66476E00B937EF /* FoodViewController.m */,
+				DFA386E11C66629D00A9686E /* FoodTableViewCell.h */,
+				DFA386E21C66629D00A9686E /* FoodTableViewCell.m */,
+			);
+			name = "Food View";
+			sourceTree = "<group>";
+		};
 		DFA764F81C65E10B007A5BC4 = {
 			isa = PBXGroup;
 			children = (
@@ -118,15 +151,15 @@
 		DFA765031C65E10B007A5BC4 /* iOS Code Test */ = {
 			isa = PBXGroup;
 			children = (
+				DFA7655A1C6618A4007A5BC4 /* Abstract Classes */,
 				DFA765411C65E3BC007A5BC4 /* Main View */,
 				DFA765421C65E3C6007A5BC4 /* Exercise View */,
-				DFA765431C65E3CF007A5BC4 /* Overview Food View */,
+				DFA765431C65E3CF007A5BC4 /* Food Category View */,
+				DFA4136E1C66476000B937EF /* Food View */,
 				DFA765441C65E3E5007A5BC4 /* Detailed Food View */,
 				DFA7653A1C65E130007A5BC4 /* Resources */,
 				DFA765071C65E10B007A5BC4 /* AppDelegate.h */,
 				DFA765081C65E10B007A5BC4 /* AppDelegate.m */,
-				DFA7650A1C65E10B007A5BC4 /* ViewController.h */,
-				DFA7650B1C65E10B007A5BC4 /* ViewController.m */,
 				DFA7650D1C65E10B007A5BC4 /* Main.storyboard */,
 				DFA765131C65E10B007A5BC4 /* Assets.xcassets */,
 				DFA765151C65E10B007A5BC4 /* LaunchScreen.storyboard */,
@@ -166,6 +199,8 @@
 		DFA7653A1C65E130007A5BC4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DFA413751C66517D00B937EF /* Exercise.png */,
+				DFA413761C66517D00B937EF /* food.jpg */,
 				DFA7653B1C65E158007A5BC4 /* categoriesStatic.json */,
 				DFA7653C1C65E158007A5BC4 /* foodStatic.json */,
 				DFA7653D1C65E158007A5BC4 /* exercisesStatic.json */,
@@ -176,6 +211,8 @@
 		DFA765411C65E3BC007A5BC4 /* Main View */ = {
 			isa = PBXGroup;
 			children = (
+				DFA7654E1C65F017007A5BC4 /* MainViewController.h */,
+				DFA7654F1C65F017007A5BC4 /* MainViewController.m */,
 			);
 			name = "Main View";
 			sourceTree = "<group>";
@@ -183,28 +220,43 @@
 		DFA765421C65E3C6007A5BC4 /* Exercise View */ = {
 			isa = PBXGroup;
 			children = (
+				DFA765511C660760007A5BC4 /* ExerciseViewController.h */,
+				DFA765521C660760007A5BC4 /* ExerciseViewController.m */,
+				DFA765541C6608F7007A5BC4 /* ExerciseTableViewCell.h */,
+				DFA765551C6608F7007A5BC4 /* ExerciseTableViewCell.m */,
 			);
 			name = "Exercise View";
 			sourceTree = "<group>";
 		};
-		DFA765431C65E3CF007A5BC4 /* Overview Food View */ = {
+		DFA765431C65E3CF007A5BC4 /* Food Category View */ = {
 			isa = PBXGroup;
 			children = (
-				DFA765451C65EE54007A5BC4 /* foodCategory.h */,
-				DFA765461C65EE54007A5BC4 /* foodCategory.m */,
-				DFA765481C65EE62007A5BC4 /* foodStatistics.h */,
-				DFA765491C65EE62007A5BC4 /* foodStatistics.m */,
-				DFA7654B1C65EE78007A5BC4 /* exerciseCategory.h */,
-				DFA7654C1C65EE78007A5BC4 /* exerciseCategory.m */,
+				DFA765571C66188F007A5BC4 /* FoodCategoryViewController.h */,
+				DFA765581C66188F007A5BC4 /* FoodCategoryViewController.m */,
+				DFA386DE1C66628E00A9686E /* FoodCategoryTableViewCell.h */,
+				DFA386DF1C66628E00A9686E /* FoodCategoryTableViewCell.m */,
 			);
-			name = "Overview Food View";
+			name = "Food Category View";
 			sourceTree = "<group>";
 		};
 		DFA765441C65E3E5007A5BC4 /* Detailed Food View */ = {
 			isa = PBXGroup;
 			children = (
+				DFA765611C661BEF007A5BC4 /* FoodStatisticsViewController.h */,
+				DFA765621C661BEF007A5BC4 /* FoodStatisticsViewController.m */,
+				DFA386E41C6662AA00A9686E /* FoodStatisticsTableViewCell.h */,
+				DFA386E51C6662AA00A9686E /* FoodStatisticsTableViewCell.m */,
 			);
 			name = "Detailed Food View";
+			sourceTree = "<group>";
+		};
+		DFA7655A1C6618A4007A5BC4 /* Abstract Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DFA7655B1C6618CE007A5BC4 /* AbstractViewController.h */,
+				DFA7655C1C6618CE007A5BC4 /* AbstractViewController.m */,
+			);
+			name = "Abstract Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,8 +366,10 @@
 				DFA765141C65E10B007A5BC4 /* Assets.xcassets in Resources */,
 				DFA7653F1C65E158007A5BC4 /* foodStatic.json in Resources */,
 				DFA7650F1C65E10B007A5BC4 /* Main.storyboard in Resources */,
+				DFA413771C66517D00B937EF /* Exercise.png in Resources */,
 				DFA7653E1C65E158007A5BC4 /* categoriesStatic.json in Resources */,
 				DFA765401C65E158007A5BC4 /* exercisesStatic.json in Resources */,
+				DFA413781C66517D00B937EF /* food.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,12 +394,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFA7654A1C65EE62007A5BC4 /* foodStatistics.m in Sources */,
-				DFA765471C65EE54007A5BC4 /* foodCategory.m in Sources */,
-				DFA7650C1C65E10B007A5BC4 /* ViewController.m in Sources */,
+				DFA765561C6608F7007A5BC4 /* ExerciseTableViewCell.m in Sources */,
+				DFA765631C661BEF007A5BC4 /* FoodStatisticsViewController.m in Sources */,
+				DFA765591C66188F007A5BC4 /* FoodCategoryViewController.m in Sources */,
+				DFA386E01C66628E00A9686E /* FoodCategoryTableViewCell.m in Sources */,
+				DFA765531C660760007A5BC4 /* ExerciseViewController.m in Sources */,
+				DFA765501C65F017007A5BC4 /* MainViewController.m in Sources */,
+				DFA413711C66476E00B937EF /* FoodViewController.m in Sources */,
 				DFA765091C65E10B007A5BC4 /* AppDelegate.m in Sources */,
-				DFA7654D1C65EE78007A5BC4 /* exerciseCategory.m in Sources */,
 				DFA765121C65E10B007A5BC4 /* iOS_Code_Test.xcdatamodeld in Sources */,
+				DFA386E61C6662AA00A9686E /* FoodStatisticsTableViewCell.m in Sources */,
+				DFA386E31C66629D00A9686E /* FoodTableViewCell.m in Sources */,
+				DFA7655D1C6618CE007A5BC4 /* AbstractViewController.m in Sources */,
 				DFA765061C65E10B007A5BC4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -570,6 +630,7 @@
 				DFA765331C65E10B007A5BC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DFA765341C65E10B007A5BC4 /* Build configuration list for PBXNativeTarget "iOS Code TestTests" */ = {
 			isa = XCConfigurationList;
@@ -578,6 +639,7 @@
 				DFA765361C65E10B007A5BC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DFA765371C65E10B007A5BC4 /* Build configuration list for PBXNativeTarget "iOS Code TestUITests" */ = {
 			isa = XCConfigurationList;
@@ -586,6 +648,7 @@
 				DFA765391C65E10B007A5BC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -19,6 +19,7 @@
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
+- (BOOL) tableExistForEntity: (NSString*) entityName;
 
 
 @end

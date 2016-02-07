@@ -17,6 +17,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //Change the global tint color
+    [self.window setTintColor:[UIColor blackColor]];
+    
     return YES;
 }
 
@@ -84,6 +88,8 @@
         dict[NSLocalizedFailureReasonErrorKey] = failureReason;
         dict[NSUnderlyingErrorKey] = error;
         error = [NSError errorWithDomain:@"YOUR_ERROR_DOMAIN" code:9999 userInfo:dict];
+        
+        //TODO
         // Replace this with code to handle the error appropriately.
         // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
@@ -107,6 +113,27 @@
     _managedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
     [_managedObjectContext setPersistentStoreCoordinator:coordinator];
     return _managedObjectContext;
+}
+
+- (BOOL) tableExistForEntity: (NSString*) entityName {
+    
+    
+    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:entityName];
+    
+    NSError *error = nil;
+    NSUInteger count = [self.managedObjectContext countForFetchRequest:request error:&error];
+    
+    if (error) {
+        NSLog(@"Error: %@", error);
+        return 0;
+    }
+    
+    if (count>0) {
+        return YES;
+    } else {
+        return NO;
+    }
+    
 }
 
 #pragma mark - Core Data Saving support
